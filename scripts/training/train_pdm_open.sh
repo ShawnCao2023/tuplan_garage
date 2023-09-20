@@ -6,7 +6,7 @@ BATCH_SIZE=64
 SEED=0
 
 JOB_NAME=training_pdm_open_model
-CACHE_PATH=/path/to/cache/
+CACHE_PATH=/tmp/cache
 USE_CACHE_WITHOUT_DATASET=False
 
 python $NUPLAN_DEVKIT_ROOT/nuplan/planning/script/run_training.py \
@@ -14,7 +14,7 @@ seed=$SEED \
 py_func=train \
 +training=training_pdm_open_model \
 job_name=$JOB_NAME \
-scenario_builder=nuplan \
+scenario_builder=nuplan_mini \
 cache.cache_path=$CACHE_PATH \
 cache.use_cache_without_dataset=$USE_CACHE_WITHOUT_DATASET \
 lightning.trainer.params.max_epochs=$TRAIN_EPOCHS \

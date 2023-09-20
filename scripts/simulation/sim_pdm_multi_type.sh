@@ -1,6 +1,6 @@
 
 # SPLIT=val14_split
-SPLIT=one_hand_picked_scenario_cxx
+SPLIT=one_of_each_scenario_type
 CHALLENGE=closed_loop_reactive_agents # open_loop_boxes, closed_loop_nonreactive_agents, closed_loop_reactive_agents
 
 python $NUPLAN_DEVKIT_ROOT/nuplan/planning/script/run_simulation.py \
